@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" id="top">
+    <div id="top" class="top-anchor" aria-hidden="true"></div>
+    <header class="site-header">
       <a class="brand" href="#top" aria-label="上海众德社会工作评估中心首页">
         <img src="assets/zhongde-logo.jpg" alt="上海众德社会工作评估中心标识">
         <span>
@@ -321,7 +322,13 @@
 
     <footer class="site-footer">
       <p>© 上海众德社会工作评估中心</p>
-      <a href="#top">返回顶部</a>
+      <a href="#top" class="back-to-top">返回顶部</a>
     </footer>
+    <script>
+      document.querySelector(".back-to-top").addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
