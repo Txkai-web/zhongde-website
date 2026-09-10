@@ -781,7 +781,7 @@ a {
   .hero-content {
     width: calc(100% - 40px);
     margin: 0 20px;
-    padding: 86px 0 260px;
+    padding: 86px 0 28px;
   }
 
   .hero-media::after {
@@ -791,10 +791,13 @@ a {
   }
 
   .hero-facts {
+    position: relative;
     grid-template-columns: 1fr;
-    right: 20px;
-    left: 20px;
+    right: auto;
+    bottom: auto;
+    left: auto;
     max-width: none;
+    margin: 0 20px 32px;
   }
 
   .hero-facts article {
