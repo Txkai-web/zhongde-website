@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
@@ -20,13 +20,16 @@
           <small>Shanghai Zhongde Social Work Evaluation Center</small>
         </span>
       </a>
-      <nav class="main-nav" aria-label="主导航">
+      <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="打开导航" title="打开导航"><span class="menu-open-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></span><span class="menu-close-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
         <a href="#about">关于众德</a>
         <a href="#domains">服务对象</a>
         <a href="#services">业务介绍</a>
         <a href="#method">评估方法</a>
+        <a href="#cases">案例展示</a>
         <a href="#contact">联系我们</a>
       </nav>
+      <div class="reading-progress" aria-hidden="true"></div>
     </header>
 
     <main>
@@ -36,13 +39,14 @@
         </div>
         <div class="hero-content">
           <p class="eyebrow">第三方评估 · 项目支持 · 能力建设</p>
-          <h1>以专业、客观、可追溯的评估服务，助力社会服务高质量发展</h1>
+          <h1>上海众德<br>社会工作评估中心</h1>
+          <p class="hero-statement">让服务的价值，有据可循。</p>
           <p class="hero-copy">
             众德聚焦社会工作与社会服务领域，为政府购买服务项目、社区治理项目、社会组织能力建设和公益服务项目提供评估、督导、咨询与培训支持。
           </p>
           <div class="hero-actions" aria-label="首页快捷操作">
-            <a class="button primary" href="#contact">咨询合作</a>
-            <a class="button secondary" href="#services">查看业务</a>
+            <a class="button primary" href="#contact">咨询合作 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+            <a class="button secondary" href="#services">了解我们的服务 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           </div>
         </div>
         <div class="hero-facts" aria-label="服务价值摘要">
@@ -64,7 +68,7 @@
       <section class="section intro" id="about">
         <div class="section-kicker">关于众德</div>
         <div class="section-heading">
-          <h2>关于众德</h2>
+          <h2>专业有据，<br>服务有温度。</h2>
           <p>
             上海众德社会工作评估中心是一家扎根上海、服务社会工作与社会服务领域的专业评估机构，重视独立性、规范性、实务价值和成果转化。
           </p>
@@ -147,58 +151,42 @@
       <section class="section services" id="services">
         <div class="section-kicker">业务介绍</div>
         <div class="section-heading">
-          <h2>业务介绍</h2>
+          <h2>从评估到改进，<br>回应每一阶段的需要。</h2>
           <p>以“评估研究、项目督导、能力建设、满意度调研”为主线，形成可解释、可复盘、可改进的专业服务。</p>
         </div>
-        <div class="service-grid">
-          <article class="service-card featured">
-            <span class="service-index">01</span>
-            <h3>第三方评估</h3>
-            <p>
-              针对社会服务项目、公益项目、社区治理项目及社会组织服务开展独立评估，形成客观、规范、可追溯的评估报告。
-            </p>
-            <ul>
+        <div class="service-accordion">
+          <details class="service-item" open>
+            <summary><span class="service-index">01</span><h3>第三方评估</h3><span class="service-tagline">独立视角，呈现项目真实成效</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+            <div class="service-body"><p>针对社会服务项目、公益项目、社区治理项目及社会组织服务开展独立评估，形成客观、规范、可追溯的评估报告。</p><ul>
               <li>中期评估、末期评估与绩效评估</li>
               <li>项目资料核验、现场走访与成果复盘</li>
               <li>评估指标设计与证据链梳理</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <span class="service-index">02</span>
-            <h3>项目督导与质控</h3>
-            <p>
-              结合项目目标、服务流程和执行节点，帮助团队识别偏差、优化服务路径，并提升过程管理质量。
-            </p>
-            <ul>
+            </ul></div>
+          </details>
+          <details class="service-item">
+            <summary><span class="service-index">02</span><h3>项目督导与质控</h3><span class="service-tagline">关注执行过程，支持质量提升</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+            <div class="service-body"><p>结合项目目标、服务流程和执行节点，帮助团队识别偏差、优化服务路径，并提升过程管理质量。</p><ul>
               <li>项目执行诊断与阶段性复盘</li>
               <li>服务流程优化与风险提示</li>
               <li>台账资料规范与迎检准备</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <span class="service-index">03</span>
-            <h3>能力建设培训</h3>
-            <p>
-              面向社会组织、项目负责人和一线服务人员，开展项目设计、成效呈现、资料管理和评估应用等专题培训。
-            </p>
-            <ul>
+            </ul></div>
+          </details>
+          <details class="service-item">
+            <summary><span class="service-index">03</span><h3>能力建设培训</h3><span class="service-tagline">沉淀专业方法，提升团队能力</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+            <div class="service-body"><p>面向社会组织、项目负责人和一线服务人员，开展项目设计、成效呈现、资料管理和评估应用等专题培训。</p><ul>
               <li>项目书撰写与逻辑框架梳理</li>
               <li>服务成效提炼与汇报表达</li>
               <li>组织治理与制度优化工作坊</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <span class="service-index">04</span>
-            <h3>调研与咨询</h3>
-            <p>
-              通过问卷、访谈、座谈、现场观察等方式收集多元反馈，为项目设计、政策执行和服务优化提供参考。
-            </p>
-            <ul>
+            </ul></div>
+          </details>
+          <details class="service-item">
+            <summary><span class="service-index">04</span><h3>调研与咨询</h3><span class="service-tagline">倾听多方反馈，回应真实需求</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+            <div class="service-body"><p>通过问卷、访谈、座谈、现场观察等方式收集多元反馈，为项目设计、政策执行和服务优化提供参考。</p><ul>
               <li>服务对象满意度调研</li>
               <li>社区需求与资源盘点</li>
               <li>项目改进方案与咨询建议</li>
-            </ul>
-          </article>
+            </ul></div>
+          </details>
         </div>
       </section>
 
@@ -301,6 +289,23 @@
         </ol>
       </section>
 
+      <section class="section case-preview" id="cases">
+        <div class="case-preview-inner">
+          <div>
+            <p class="section-kicker">案例展示</p>
+            <h2>让专业实践，看得见。</h2>
+            <p>从项目背景到评估发现，从服务过程到改进路径，记录社会服务的专业实践。</p>
+            <span class="case-availability">案例资料整理中 · 敬请期待</span>
+          </div>
+          <button class="case-open-button button" type="button" data-open-cases="all" aria-haspopup="dialog">浏览案例 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+        </div>
+        <div class="case-directions" aria-label="按服务方向浏览案例">
+          <button type="button" data-open-cases="evaluation" aria-haspopup="dialog"><span>01</span><strong>第三方评估</strong><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+          <button type="button" data-open-cases="community" aria-haspopup="dialog"><span>02</span><strong>社区治理</strong><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+          <button type="button" data-open-cases="capacity" aria-haspopup="dialog"><span>03</span><strong>能力建设</strong><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+          <button type="button" data-open-cases="research" aria-haspopup="dialog"><span>04</span><strong>专项调研</strong><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+        </div>
+      </section>
       <section class="contact-band" id="contact">
         <div>
           <p class="eyebrow">联系我们</p>
@@ -311,7 +316,7 @@
         </div>
         <address class="contact-card">
           <span>联系电话 / Phone</span>
-          <strong>13914386815</strong>
+          <div class="contact-phone"><a href="tel:13914386815" aria-label="拨打联系电话 13914386815">13914386815</a><button class="icon-button copy-phone" type="button" aria-label="复制联系电话" title="复制联系电话"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div>
           <span>微信公众号 / WeChat</span>
           <strong>上海众德社会工作评估中心</strong>
           <span>办公地址 / Address</span>
@@ -320,15 +325,326 @@
       </section>
     </main>
 
+    <dialog class="case-dialog" id="caseDialog" aria-labelledby="caseDialogTitle" aria-describedby="caseDialogDescription">
+      <div class="case-dialog-panel">
+        <div class="case-dialog-top">
+          <p class="section-kicker">案例展示</p>
+          <button class="case-close-button icon-button" type="button" data-close-cases aria-label="关闭案例展示" title="关闭"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+        </div>
+        <div class="case-dialog-heading">
+          <h2 id="caseDialogTitle">众德服务案例库</h2>
+          <p id="caseDialogDescription">在实践中呈现方法，在成果中看见价值。</p>
+        </div>
+        <div class="case-tabs" role="tablist" aria-label="案例分类">
+          <button type="button" role="tab" id="tab-all" aria-controls="caseResults" aria-selected="true" tabindex="0" data-filter="all">全部</button>
+          <button type="button" role="tab" id="tab-evaluation" aria-controls="caseResults" aria-selected="false" tabindex="-1" data-filter="evaluation">第三方评估</button>
+          <button type="button" role="tab" id="tab-community" aria-controls="caseResults" aria-selected="false" tabindex="-1" data-filter="community">社区治理</button>
+          <button type="button" role="tab" id="tab-capacity" aria-controls="caseResults" aria-selected="false" tabindex="-1" data-filter="capacity">能力建设</button>
+          <button type="button" role="tab" id="tab-research" aria-controls="caseResults" aria-selected="false" tabindex="-1" data-filter="research">专项调研</button>
+        </div>
+        <div id="caseResults" role="tabpanel" aria-labelledby="tab-all" tabindex="0">
+          <p class="case-result-label" aria-live="polite" aria-atomic="true">全部案例 · 整理中</p>
+          <div class="case-grid" hidden></div>
+          <div class="case-empty">
+            <div class="case-empty-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2h-4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"></path><path d="M16.706 2.706A2.4 2.4 0 0 0 15 2v5a1 1 0 0 0 1 1h5a2.4 2.4 0 0 0-.706-1.706z"></path><path d="M5 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 1.732-1"></path></svg></div>
+            <h3>案例正在整理中</h3>
+            <p>我们正在梳理可公开的项目实践，<br>后续将在这里分享服务过程与成果。</p>
+            <a class="text-link" href="#contact" data-case-contact>沟通您的项目需求 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+          </div>
+        </div>
+        <div class="case-dialog-footer"><span>专业评估 · 服务改进</span><span>上海众德</span></div>
+      </div>
+    </dialog>
     <footer class="site-footer">
       <p>© 上海众德社会工作评估中心</p>
-      <a href="#top" class="back-to-top">返回顶部</a>
+      <a href="#top" class="back-to-top">返回顶部 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></a>
     </footer>
+    <button class="floating-top icon-button" type="button" aria-label="返回顶部" title="返回顶部" hidden><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <!-- Inline UI icons from Lucide.
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+    -->
     <script>
-      document.querySelector(".back-to-top").addEventListener("click", function (event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
+      (() => {
+        const root = document.documentElement;
+        const header = document.querySelector('.site-header');
+        const menuButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
+        const navLinks = [...nav.querySelectorAll('a')];
+        const progress = document.querySelector('.reading-progress');
+        const floatingTop = document.querySelector('.floating-top');
+        const motion = matchMedia('(prefers-reduced-motion: reduce)');
+        const narrow = matchMedia('(max-width: 1100px)');
+        const caseDialog = document.querySelector('#caseDialog');
+        let headerHeight = header.offsetHeight;
+        let scrollFrame = 0;
+        let dialogScrollY = 0;
+        let dialogOpener = null;
+        let contactAfterClose = false;
+        root.classList.add('js-ready');
+
+        const setMenu = open => {
+          header.classList.toggle('menu-expanded', open);
+          menuButton.setAttribute('aria-expanded', String(open));
+          menuButton.setAttribute('aria-label', open ? '关闭导航' : '打开导航');
+          menuButton.title = open ? '关闭导航' : '打开导航';
+        };
+        menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+        navLinks.forEach(link => link.addEventListener('click', () => setMenu(false)));
+        document.addEventListener('click', event => { if (!header.contains(event.target)) setMenu(false); });
+        document.addEventListener('keydown', event => {
+          if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+            setMenu(false);
+            menuButton.focus();
+          }
+        });
+        header.addEventListener('focusout', () => requestAnimationFrame(() => {
+          if (!header.contains(document.activeElement)) setMenu(false);
+        }));
+        narrow.addEventListener('change', () => setMenu(false));
+        const refreshHeader = () => {
+          headerHeight = header.offsetHeight;
+          root.style.setProperty('--header-height', headerHeight + 'px');
+        };
+        refreshHeader();
+        if ('ResizeObserver' in window) new ResizeObserver(refreshHeader).observe(header);
+        function updateScroll() {
+          scrollFrame = 0;
+          if (caseDialog.open) return;
+          const y = window.scrollY;
+          const distance = root.scrollHeight - innerHeight;
+          progress.style.transform = 'scaleX(' + (distance > 0 ? Math.min(1, y / distance) : 0) + ')';
+          header.classList.toggle('is-scrolled', y > 20);
+          floatingTop.hidden = y < 500;
+          let current = null;
+          navLinks.forEach(link => {
+            if (document.querySelector(link.hash).getBoundingClientRect().top <= headerHeight + 100) current = link;
+          });
+          if (distance > 0 && y >= distance - 8) current = navLinks[navLinks.length - 1];
+          navLinks.forEach(link => {
+            if (link === current) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+        }
+        window.addEventListener('scroll', () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(updateScroll); }, { passive: true });
+        window.addEventListener('resize', updateScroll);
+        updateScroll();
+        function toTop(event) {
+          event.preventDefault();
+          setMenu(false);
+          window.scrollTo({ top: 0, behavior: motion.matches ? 'instant' : 'smooth' });
+          document.querySelector('.brand').focus({ preventScroll: true });
+          try { history.replaceState(null, '', '#top'); } catch (_) {}
+        }
+        document.querySelectorAll('.back-to-top, .floating-top, .brand').forEach(button => button.addEventListener('click', toTop));
+        const services = [...document.querySelectorAll('.service-item')];
+        services.forEach(item => item.querySelector('summary').addEventListener('click', event => {
+          event.preventDefault();
+          const shouldOpen = !item.open;
+          services.forEach(other => { other.open = other === item && shouldOpen; });
+          requestAnimationFrame(() => {
+            if (item.getBoundingClientRect().top < headerHeight) item.scrollIntoView({ behavior: motion.matches ? 'instant' : 'smooth', block: 'start' });
+          });
+        }));
+        const revealItems = [...document.querySelectorAll('.section-heading, .intro-layout, .domain-grid, .service-accordion, .method-layout, .advantage-list, .process-steps, .case-preview-inner, .case-directions')];
+        if ('IntersectionObserver' in window && !motion.matches) {
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.06 });
+          revealItems.forEach(item => {
+            if (item.getBoundingClientRect().top >= innerHeight) {
+              item.classList.add('reveal');
+              observer.observe(item);
+            }
+          });
+          motion.addEventListener('change', () => {
+            if (motion.matches) {
+              observer.disconnect();
+              revealItems.forEach(item => item.classList.add('is-visible'));
+            }
+          });
+        }
+
+        // Add approved public cases here: { title, category, year, summary, background, service, method, outcome }.
+        // category: evaluation | community | capacity | research.
+        const caseStudies = [];
+        const categories = { all: '全部案例', evaluation: '第三方评估', community: '社区治理', capacity: '能力建设', research: '专项调研' };
+        const tabs = [...document.querySelectorAll('[data-filter]')];
+        const results = document.querySelector('#caseResults');
+        const grid = document.querySelector('.case-grid');
+        const empty = document.querySelector('.case-empty');
+        const resultLabel = document.querySelector('.case-result-label');
+        function selectCategory(category) {
+          tabs.forEach(tab => {
+            const active = tab.dataset.filter === category;
+            tab.setAttribute('aria-selected', String(active));
+            tab.tabIndex = active ? 0 : -1;
+          });
+          results.setAttribute('aria-labelledby', 'tab-' + category);
+          const entries = caseStudies.filter(item => category === 'all' || item.category === category);
+          grid.replaceChildren();
+          entries.forEach(item => {
+            const article = document.createElement('article');
+            article.className = 'case-card';
+            const meta = document.createElement('span');
+            meta.className = 'case-meta';
+            meta.textContent = [categories[item.category], item.year].filter(Boolean).join(' · ');
+            const title = document.createElement('h3');
+            title.textContent = item.title;
+            const summary = document.createElement('p');
+            summary.textContent = item.summary;
+            const detail = document.createElement('details');
+            const trigger = document.createElement('summary');
+            trigger.textContent = '案例详情';
+            const body = document.createElement('dl');
+            [['background', '项目背景'], ['service', '服务内容'], ['method', '评估方法'], ['outcome', '成果价值']].forEach(([key, label]) => {
+              if (!item[key]) return;
+              const term = document.createElement('dt');
+              const description = document.createElement('dd');
+              term.textContent = label;
+              description.textContent = item[key];
+              body.append(term, description);
+            });
+            detail.append(trigger, body);
+            article.append(meta, title, summary, detail);
+            grid.append(article);
+          });
+          grid.hidden = !entries.length;
+          empty.hidden = entries.length > 0;
+          resultLabel.textContent = categories[category] + (entries.length ? ' · ' + entries.length + ' 个案例' : ' · 整理中');
+          empty.querySelector('h3').textContent = category === 'all' ? '案例正在整理中' : categories[category] + '案例整理中';
+        }
+        tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => selectCategory(tab.dataset.filter));
+          tab.addEventListener('keydown', event => {
+            let next = index;
+            if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+            else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+            else if (event.key === 'Home') next = 0;
+            else if (event.key === 'End') next = tabs.length - 1;
+            else return;
+            event.preventDefault();
+            selectCategory(tabs[next].dataset.filter);
+            tabs[next].focus({ preventScroll: true });
+          });
+        });
+        document.querySelectorAll('[data-open-cases]').forEach(button => button.addEventListener('click', () => {
+          selectCategory(button.dataset.openCases);
+          dialogOpener = button;
+          dialogScrollY = window.scrollY;
+          contactAfterClose = false;
+          document.body.style.top = '-' + dialogScrollY + 'px';
+          document.body.classList.add('dialog-open');
+          caseDialog.showModal();
+        }));
+        document.querySelector('[data-close-cases]').addEventListener('click', () => caseDialog.close());
+        caseDialog.addEventListener('keydown', event => {
+          if (event.key !== 'Tab') return;
+          const controls = [...caseDialog.querySelectorAll('button, a[href], summary, [tabindex]')]
+            .filter(control => control.tabIndex >= 0 && !control.disabled && control.getClientRects().length);
+          const first = controls[0];
+          const last = controls[controls.length - 1];
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+          }
+        });
+        let backdropStart = false;
+        caseDialog.addEventListener('pointerdown', event => { backdropStart = event.target === caseDialog; });
+        caseDialog.addEventListener('click', event => { if (backdropStart && event.target === caseDialog) caseDialog.close(); });
+        caseDialog.addEventListener('close', () => {
+          document.body.classList.remove('dialog-open');
+          document.body.style.top = '';
+          window.scrollTo({ top: dialogScrollY, behavior: 'instant' });
+          if (contactAfterClose) {
+            document.querySelector('#contact').scrollIntoView({ behavior: motion.matches ? 'instant' : 'smooth' });
+            document.querySelector('.contact-phone a').focus({ preventScroll: true });
+          } else if (dialogOpener) dialogOpener.focus({ preventScroll: true });
+          updateScroll();
+        });
+        document.querySelector('[data-case-contact]').addEventListener('click', event => {
+          event.preventDefault();
+          contactAfterClose = true;
+          caseDialog.close();
+        });
+        let toastTimer;
+        function showToast(message) {
+          const toast = document.querySelector('.toast');
+          clearTimeout(toastTimer);
+          toast.textContent = message;
+          toast.classList.add('is-visible');
+          toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2800);
+        }
+        document.querySelector('.copy-phone').addEventListener('click', async () => {
+          let copied = false;
+          if (navigator.clipboard) {
+            try { await navigator.clipboard.writeText('13914386815'); copied = true; } catch (_) {}
+          }
+          if (!copied) {
+            const input = document.createElement('textarea');
+            input.value = '13914386815';
+            input.className = 'clipboard-fallback';
+            input.readOnly = true;
+            document.body.append(input);
+            input.select();
+            try { copied = document.execCommand('copy'); } catch (_) {}
+            input.remove();
+            document.querySelector('.copy-phone').focus({ preventScroll: true });
+          }
+          showToast(copied ? '联系电话已复制' : '请长按号码复制：13914386815');
+        });
+      })();
     </script>
   </body>
 </html>
